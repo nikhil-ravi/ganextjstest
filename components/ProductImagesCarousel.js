@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
-import NextItemIcon from "./NextItemIcon";
-import PrevItemIcon from "./PrevItemIcon";
+import NextItemIcon from "./nextItemIcon";
+import PrevItemIcon from "./prevItemIcon";
 
 const ProductImagesCarousel = ({ imageList }) => {
   const [imageIdx, setImageIdx] = useState(0);

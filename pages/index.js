@@ -7,12 +7,12 @@ import {
 import { homeProfileImage } from "../utils/utils";
 import { motion } from "framer-motion";
 import Ripples from "react-ripples";
-import Metadata from "../components/MetaData";
+import Metadata from "../components/metaData";
 import pageMeta from "../content/meta";
 import Link from "next/link";
-import ProductCard from "../components/ProductCard";
-import PrevItemIcon from "../components/PrevItemIcon";
-import NextItemIcon from "../components/NextItemIcon";
+import ProductCard from "../components/productCard";
+import PrevItemIcon from "../components/prevItemIcon";
+import NextItemIcon from "../components/nextItemIcon";
 import products from "../content/products";
 import { useState } from "react";
 

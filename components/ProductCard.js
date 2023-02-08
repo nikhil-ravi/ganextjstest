@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ListIcon from "./ListIcon";
-import ProductImagesCarousel from "./ProductImagesCarousel";
+import ListIcon from "./listIcon";
+import ProductImagesCarousel from "./productImagesCarousel";
 import { motion } from "framer-motion";
 import { popUp } from "../content/FramerMotionVariants";
 
