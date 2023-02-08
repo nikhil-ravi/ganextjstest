@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
