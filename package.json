@@ -1,8 +1,9 @@
 {
-  "name": "contoso-spaces-web",
-  "description": "Contoso Spaces web application",
+  "name": "milestone-1",
+  "description": "CS 5356: Milestone 1",
   "version": "1.0.0",
   "license": "MIT",
+  "author": "Nikhil Ravi <nr337@cornell.edu>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

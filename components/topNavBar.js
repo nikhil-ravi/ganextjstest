@@ -9,7 +9,7 @@ import {
   mobileNavItemSideways,
   popUp,
 } from "../content/FramerMotionVariants";
-import { useDarkMode } from "../context/darkModeContext";
+import { useDarkMode } from "./darkModeContext";
 import { navigationRoutes } from "../utils/utils";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
