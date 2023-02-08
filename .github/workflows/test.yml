@@ -16,9 +16,12 @@ jobs:
           path: "**/node_modules"
           key: node_modules-${{ hashFiles('**/package-lock.json') }}
 
+      - name: Lint
+        run: npm run lint
+
       # install the dependencies
       - name: install dependencies
-        run: npm install  --force --legacy-peer-deps
+        run: npm install
 
       - name: Build project
         run: npm run build
