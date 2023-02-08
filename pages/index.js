@@ -100,6 +100,46 @@ export default function Home() {
             </div>
           </div>
         </motion.section>
+        {/* Feature List */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          variants={FadeContainer}
+          viewport={{ once: true }}
+          className="relative grid place-content-center min-h-screen"
+          id="FeatureList"
+        >
+          <div className="w-full mx-auto flex flex-col items-center gap-10">
+            <button
+              className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              onClick={prevProduct}
+              variants={popUp}
+            >
+              <PrevItemIcon />
+            </button>
+            <ProductCard
+              title={activeProducts[productIdx].title}
+              price={activeProducts[productIdx].price}
+              productImages={[
+                "/assets/images/products/apple-watch.png",
+                "/assets/images/products/apple-watch-1.png",
+              ]}
+              description={activeProducts[productIdx].description}
+              highlighted_features={
+                activeProducts[productIdx].highlighted_features
+              }
+              paymentLink={undefined}
+            />
+            {/* Slider controls */}
+            <button
+              type="button"
+              className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              onClick={nextProduct}
+            >
+              <NextItemIcon />
+            </button>
+          </div>
+        </motion.section>
       </div>
     </>
   );

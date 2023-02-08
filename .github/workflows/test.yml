@@ -23,6 +23,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # # run the tests
-      # - name: test
-      #   run: npm test
+      # run the tests
+      - name: test
+        run: npm test
