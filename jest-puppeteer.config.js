@@ -3,7 +3,7 @@ const PORT = 14568;
 module.exports = {
   launch: {
     headless: true,
-    // executablePath: "/usr/bin/google-chrome-stable",
+    executablePath: "/usr/bin/google-chrome-stable",
     args: [
       "--ignore-certificate-errors",
       "--no-sandbox",
